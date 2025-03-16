@@ -8,7 +8,7 @@ Bài tập 2: Tham chiếu làm tham số hàm
 tăng giá trị của biến đó lên 10 đơn vị. Gọi hàm trong main và in giá trị trước/sau khi thay đổi.
 
 Bài tập 3: Hoán đổi hai số dùng Tham chiếu
-Đề bài: Viết một hàm nhận hai tham chiếu đến hai biến kiểu int,
+Đề bài: Viết một hàm nhận hai tham chiếu đến hai biến kiểu int,   
 hoán đổi giá trị của chúng. Kiểm tra kết quả trong main.
 */
 

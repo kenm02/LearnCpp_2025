@@ -24,7 +24,6 @@ void swapValue(int* number,int* otherNumber){
     temp = *number;
     *number = *otherNumber;
     *otherNumber = temp;
-
 }
 //Bài tập 4:
 int sumArray(int myArray[], int arraySize){
@@ -38,6 +37,9 @@ int sumArray(int myArray[], int arraySize){
 }
 
 int main(){
+    int num3 =1000000000;
+    short* ptr3 = (short*)&num3;
+    cout << *ptr3 << endl;
     // Bài tập 1:
     int num = 1000;
     int* ptr = &num;
@@ -54,7 +56,7 @@ int main(){
     swapValue(ptr,ptrNum1);
     cout << "Num's value after swap: " << num << endl;
     cout << "Num1's value after swap: " << num1 << endl;
-    
+
     // Bài tập 4:
     int arraySize;
     cout <<"Enter array's size: ";

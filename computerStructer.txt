@@ -1,0 +1,48 @@
+I/ Cấu trúc máy tính và quá trình thực hiện một program
+    Một máy tính bao gồm 4 phần chính:
+        - CPU (Central processing unit): Bộ12 xử lý trung tâm, thực thi lệnh
+        - RAM (Random access memory): Lưu trữ dữ liệu tạm thời cho CPU
+        - SSD/HHD(solid State Driver/Hard disk driver): Lưu trữ dữ liệu lâu dài
+        - I/O (in/out) : Các thiết bị đầu vào hoặc ra 
+    Khi một chương trình được chạy sẽ bao gồm các quá trình sau:
+        1. Chương trình được nạp từ RAM vào CPU
+        2. Chương trình được đọc từ RAM thông qua Bus
+        3. CPU thực hiện lệnh, xử lý
+        4. CPU sẽ có thể lấy dữ liệu từ RAM, Cache hoặc ổ cứng nếu cần
+        5. Hiển thị kết quả ra màn hình hoặc lưu vào ổ cứng
+II/ Cách hoạt động của từng bộ phận
+
+    1/ Cách hoạt động của CPU
+        */ Các thành phần của CPU
+            - CU (Control unit): Điều phối dữ liệu, điều khiển CPU thực hiện
+            - ALU(Arithimetic logic unit): Xử lý các phép toán và logic
+            - Register( Thanh ghi): Lưu tạm dữ liệu CPU cần xử lý ngay lập thức
+        */ Cách hoạt động
+            1. Fetch(lấy lệnh): CPU lấy một lệnh từ RAM vào thanh ghi
+            2. Decode(Giải mã lệnh): CPU đọc hiểu lệnh yêu cầu làm gì 
+            3. Execute(Thực thi): ALU xử lý các lệnh 
+
+    2/ Cách hoạt động của Cache (Bộ nhớ tốc độ cao)
+        * Các cấp Cache
+            - L1 Cache-siêu nhanh , gắn ngay trong CPU
+            - L2 Cache-Nhanh, nằm gần CPU
+            - L3 Cache-Lớn hơn nhưng chậm hơn
+
+    3/ Cách họa động của RAM
+        - Ram chứa chương trình và dữ liệu tạm thời mà CPU đang xử lý
+        - Khi tắt máy dữ liệu trong RAM sẽ mất hết
+        - CPU có thể đọc RAM với tốc độ nhanh hơn ở cứng hàng chục lần
+        *** Nếu RAM đầy, hệ điều hành sẽ dùng bộ nhớ ảo (Virtual memory)
+         trên ổ cứng -> siêu chậm 
+
+    4/ Ổ cứng (SSD/HDD) lưu trữ dài hạn
+        - HDD: Chậm nhưng rẻ và dung lượng Lớn
+        - SSD: Nhanh gấp 10-15 lần HDD, nhưng đắt hơn.
+        - SSD dùng NAND Flash - Không có bộ phận chuyển động nên bền hơn HDD
+
+III/ Hệ thống Bus - cầu nối giữa các thành phần
+    *** CPU,RAM,Ổ cứng và I/O phải kết nối với nhanh để trao đôi dữ liệu thông qua Bus
+    Có 3 loại Bus chính:
+        1. Data Bus(Bus dữ liệu): Vận chuyển dữ liệu giữa các thành phần
+        2. Address Bus(Bus địa chỉ): Chỉ định địa chỉ bộ nhớ để đọc/ghi dữ liệu.
+        3. Control Bus(Bus điều khiển): Điều khiển quá trình truyền dữ liệu.

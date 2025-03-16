@@ -1,0 +1,26 @@
+I/ Quá trình xử lý trong CPU
+    CPU xử lý lệnh theo chu trình Fetch - Decode - Execute:
+        1. Fetch: CPU lấy một lệnh từ RAM và Register.
+        2. Decode: CPU phân tích lệnh xem nó yêu cầu những gì
+        3. Execute: ALU hoặc các đơn vị khác thực thi lệnh đã được Decode phân tích
+        4. Write back: Nếu có kết quả, CPU sẽ ghi vào thanh ghi hoặc bộ nhớ
+    1/ Thanh ghi - Bộ nhớ siêu nhanh trong CPU
+    Thanh ghi giúp CPU tăng tốc xử lý, vì dữ liệu trong thanh ghi có thể truy xuất siêu nhanh, nhanh hơn RAM rất nhiều
+    * Các loại thanh ghi quan trọng:
+        - PC(Program Counter): Chứa địa chỉ lệnh tiếp theo cần thực thi
+        - IR (Intruction Register): Lệnh lưu CPU đang thực hiện
+        - AX,BX,CX,DX: Các thanh ghi đa dụng ( dùng trong tính toán, lưu tạm)
+        - SP(Stack Pointer): Trỏ lên đỉnh của các Stack (dùng trong hàm gọi lệnh)
+        - FLAGS Register: Lưu trạng thái của CPU sau khi thực hiện lệnh (Zero Flag, Carry Flag,...)
+        Ví dụ về thanh ghi:
+        Khi CPU tính AX = BX + CX:
+            1. BX và CX được nạp vào ALU
+            2. ALU thực hiện phép cộng.
+            3. Kết quả lưu vào AX
+        Nếu dữ liệu không được ghi trong thanh ghi, CPU phải lấy từ Cache hoặc RAM(chậm)                  
+    2/ Bộ nhớ cache - Bí mật giúp CPU chạy nhanh
+    CPU có tốc độ vài Ghz nhưng RAM thì chậm hơn nhiều -> CPU phải đợi RAM lấy dữ liệu, gây lãng phí tài nguyên
+        - Nếu dữ liệu CPU cần có trong L1 Cache -> CPU lấy ngay.
+        - Nếu L1 Cache không có, CPU tìm trong L2/L3 Cache.
+        - Nếu Cache không có, CPU buộc phải lấy từ RAM (chậm hơn hàng trăm lần)
+    
