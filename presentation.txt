@@ -15,7 +15,7 @@ Các kiến thức đã học được cho đến ngày 14/04/2025:
         + Cách sử dụng?
         + Các lưu ý khi sử dụng pointer ?
         + null pointer?
-    - Tham chiếu:
+    - Tham chiếu: 
         + là gì?
         + Cách sử dụng?
         + Các lưu ý khi sử dụng? 
@@ -23,4 +23,10 @@ Các kiến thức đã học được cho đến ngày 14/04/2025:
         + Tại sao phải sinh ra function?
         + Cách triển khai một function?
         + hai func cùng tên có thể tồn tại song song không ?
+
+Học thêm: danh sanh liên kểt
+Là cấu trúc dữ liệu được sử dụng để lưu các phần tử có thể mở rộng hoặc thu hẹp (cấp phát động). phần tử cuối cùng trong dslk trỏ vào null
+    - danh sách liên kết đơn 
+    - danh sách liên kết đôi
+    - danh sách liên kết vòng
 */
